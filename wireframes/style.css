@@ -1,26 +1,7 @@
-/*
-Theme Name: Anna’s Travels
-Theme URI: http://annastravels.com
-Description: A custom theme for http://annastravels.com
-Author: Pete Martin
-Author URI: http://ninjatronic.com/
-Version: 1.0
-Tags: responsive
-
-License: MIT
-License URI: http://opensource.org/licenses/MIT
-*/
-@import url('bower_components/bootstrap/dist/css/bootstrap.css');
-@import url('bower_components/font-awesome/css/font-awesome.css');
-
 /* colors from http://www.colorcombos.com/color-schemes/424/ColorCombo424.html */
 
 body {
     background-color: #696A6C;
-}
-
-a {
-    cursor: pointer;
 }
 
 a:link {color:#8F6048;}      /* unvisited link */
@@ -30,12 +11,11 @@ a:active {color:#644436;}  /* selected link */
 
 .big-light {
     font-size: 72px;
-    font-weight: lighter;
+    font-weight: 200;
 }
 
-.big-light small {
+.big-light-small {
     font-weight: 200;
-    font-size: 50%;
 }
 
 .navbar-default {
@@ -44,32 +24,14 @@ a:active {color:#644436;}  /* selected link */
     border-radius: 0;
     box-shadow: 0 3px 5px #555555;
     margin-bottom: 0;
-    font-size: large;
 }
 
 .golden {
     color: #DFC184;
 }
 
-.bottomtron p,
-.bottomtron ul {
-    color: #CCCCCC;
-    font-size: small;
-    text-align: justify;
-}
-
-.bottomtron a {
-    color: #DFC184;
-}
-
-.bottomtron a:hover,
-.bottomtron a:focus{
-    color: #cbb078;
-}
-
 .navbar-default .navbar-brand {
     color: #DFC184;
-    font-size: x-large;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -87,31 +49,21 @@ a:active {color:#644436;}  /* selected link */
 }
 
 .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a .caret,
+.navbar-default .navbar-nav > .active > a .caret:hover,
+.navbar-default .navbar-nav > .active > a .caret:focus,
 .navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a .caret,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a,
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-nav > .open > a .caret:hover,
+.navbar-default .navbar-nav > .open > a .caret:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
     background-color: #2A75A9;
     color: #DFC184;
 }
-
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a .caret:hover,
-.navbar-default .navbar-nav > .active > a .caret:focus,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-nav > .open > a .caret:hover,
-.navbar-default .navbar-nav > .open > a .caret:focus,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
-.navbar-default .navbar-toggle {
-    background-color: #2e4e67;
-    color: #DFC184;
-}
-
 
 .navbar-nav > li > .dropdown-menu {
     background-color: #2A75A9;
