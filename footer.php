@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-sm-6">
                         <h3 class="tk-estilo-pro">
-                            More
+                            The Feed
                         </h3>
                         <p class="tk-museo-sans justified">
                             Thanks for dropping by! Feel free to join the discussion by leaving comments, and stay
@@ -44,5 +44,6 @@
             </div>
         </div>
 
+        <?php wp_footer(); ?>
     </body>
 </html>
