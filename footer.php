@@ -20,7 +20,7 @@
                             $args = array( 'numberposts' => '1' );
                             $recent_posts = wp_get_recent_posts( $args );
                             foreach( $recent_posts as $recent ){
-                                echo '<p class="tk-museo-sans justified">' . get_the_excerpt() . ' <a href="' . get_permalink() . '">More...</a></p>';
+                                echo '<p class="tk-museo-sans justified">' . $recent['post_excerpt'] . ' <a href="' . get_permalink($recent['ID']) . '">More...</a></p>';
                             }
                         ?>
                     </div>
