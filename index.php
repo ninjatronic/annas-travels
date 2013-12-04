@@ -27,7 +27,11 @@
                                     <?php echo get_the_excerpt(); ?>
                                 </p>
                                 <p class="tk-museo-sans">
-                                    <?php echo get_comments_number() ?> Comments | <a href="<?php the_permalink(); ?>">Read More...</a>
+                                    <?php
+                                    if(get_comments_number() > 0) {
+                                        echo get_comments_number() . ' Comments | ';
+                                    }
+                                    ?><a href="<?php the_permalink(); ?>">Read More...</a>
                                 </p>
                             </div>
                         </div>
