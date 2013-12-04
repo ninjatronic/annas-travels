@@ -23,10 +23,15 @@ a {
     cursor: pointer;
 }
 
-a:link {color:#8F6048;}      /* unvisited link */
-a:visited {color:#644436;}  /* visited link */
-a:hover {color:#644436;}  /* mouse over link */
-a:active {color:#644436;}  /* selected link */
+/*a:link {color:#8F6048;}      *//* unvisited link */
+/*a:visited {color:#644436;}  *//* visited link */
+/*a:hover {color:#644436;}  *//* mouse over link */
+/*a:active {color:#644436;}  *//* selected link */
+
+a:link {color:#2A75A9;}      /* unvisited link */
+a:visited {color: #DFC184;}  /* visited link */
+a:hover {color:#DFC184;}  /* mouse over link */
+a:active {color:#DFC184;}  /* selected link */
 
 .big-light {
     font-size: 72px;
