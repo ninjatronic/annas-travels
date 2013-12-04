@@ -17,7 +17,7 @@
                     <div class="panel">
                         <div class="row">
                             <div class="col-sm-3">
-                                <!-- post image -->
+                                <img class="img-clear img-post" src="<?php echo get_the_image() ?>"/>
                             </div>
                             <div class="col-sm-9">
                                 <h2 class="tk-estilo-pro">
