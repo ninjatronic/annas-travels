@@ -77,7 +77,6 @@
             <li data-target="#header-carousel" data-slide-to="2"></li>
             <li data-target="#header-carousel" data-slide-to="3"></li>
             <li data-target="#header-carousel" data-slide-to="4"></li>
-            <li data-target="#header-carousel" data-slide-to="5"></li>
         </ol>
 
         <div class="carousel-inner carousel-height">
@@ -94,12 +93,16 @@
                 $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id($recent['ID']), 'full');
                 echo        '<img src="' . $large_image_url[0] . '">';
                 echo        '<div class="carousel-caption">';
-                echo            '<h1>';
-                echo                $recent['post_title'];
-                echo            '</h1>';
-                echo            '<p class="text-center">';
-                echo                $recent['post_excerpt'];
-                echo            '</p>';
+                echo            '<a href="' . get_permalink($recent['ID']) . '">';
+                echo                '<h1>';
+                echo                    $recent['post_title'];
+                echo                '</h1>';
+                echo            '</a>';
+                echo            '<a href="' . get_permalink($recent['ID']) . '">';
+                echo                '<p class="text-center">';
+                echo                    $recent['post_excerpt'];
+                echo                '</p>';
+                echo            '</a>';
                 echo        '</div>';
                 echo    '</div>';
                 $index++;

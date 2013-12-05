@@ -17,3 +17,7 @@
     max-width: none;
     margin-left: -800px;
 }
+
+.carousel-caption > a {
+    color: #ffffff;
+}
