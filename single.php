@@ -18,6 +18,21 @@
                                 <p class="lead">
                                     <?php echo apply_filters('the_content',get_the_content()); ?>
                                 </p>
+                                <h3>
+                                    By <?php the_author_link(); ?>
+                                    <br/>
+                                    <small>
+                                        <?php the_date(); ?>
+                                    </small>
+                                </h3>
+                                <p>
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
+                                        <i class="fa fa-facebook fa-2x"></i>
+                                    </a>
+                                    <a href="http://twitter.com/home?status=<?php the_permalink(); ?>">
+                                        <i class="fa fa-twitter fa-2x"></i>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>

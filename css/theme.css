@@ -2,12 +2,12 @@ body {
     background-color: #696A6C;
 }
 
-p {
+p, ul, ol, li {
     font-family: "museo-sans",sans-serif;
     text-align: justify;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "estilo-pro",sans-serif;
 }
 
@@ -19,6 +19,7 @@ hr {
     border-top: 1px dotted #2e4e67;
     height: 1px;
 }
+
 a,
 a:link {
     cursor: pointer;
