@@ -1,0 +1,28 @@
+.searchform > div > label {
+    display: none;
+}
+
+.searchform > div > #s {
+    width: 100%;
+    border: 0 solid transparent;
+    margin: 3px 0;
+    background-color: #696A6C;
+    color: #CCCCCC !important;
+    padding: 3px;
+}
+
+.searchform > div > #searchsubmit {
+    border: 0 solid transparent;
+    background-color: #274257;
+    color: #CCCCCC !important;
+    font-size: 18px;
+    padding: 10px 16px;
+    width: 100%;
+}
+.searchform > div > #searchsubmit:hover,
+.searchform > div > #searchsubmit:focus,
+.searchform > div > #searchsubmit:active,
+.searchform > div > #searchsubmit.active {
+    color: #CCCCCC;
+    background-color: #2e4e67;
+}

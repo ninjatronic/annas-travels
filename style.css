@@ -21,6 +21,7 @@ License URI: http://opensource.org/licenses/MIT
 @import url('css/archive.css');
 @import url('css/carousel.css');
 @import url('css/wp_specific.css');
+@import url('css/search.css');
 
 .big-light {
     font-size: 72px;

@@ -35,7 +35,10 @@
         </a>
     </p>
 <hr/>
-<a type="button" class="btn btn-subscribe btn-lg btn-block" href="<?php bloginfo('rss2_url');?>">Subscribe</a>
+<h3>
+    Search
+</h3>
+<?php get_search_form(); ?>
 <hr/>
 <h2>
     <?php
