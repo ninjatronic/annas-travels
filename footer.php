@@ -12,25 +12,34 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="tk-estilo-pro">
+                    <div class="col-sm-4">
+                        <h3>
                             The Latest
                         </h3>
                         <?php
                             $args = array( 'numberposts' => '1' );
                             $recent_posts = wp_get_recent_posts( $args );
                             foreach( $recent_posts as $recent ){
-                                echo '<p class="tk-museo-sans justified">' . $recent['post_excerpt'] . ' <a href="' . get_permalink($recent['ID']) . '">More...</a></p>';
+                                echo '<p>' . $recent['post_excerpt'] . ' <a href="' . get_permalink($recent['ID']) . '">More...</a></p>';
                             }
                         ?>
                     </div>
-                    <div class="col-sm-6">
-                        <h3 class="tk-estilo-pro">
+                    <div class="col-sm-4">
+                        <h3>
                             The Feed
                         </h3>
-                        <p class="tk-museo-sans justified">
+                        <p>
                             Thanks for dropping by! Feel free to join the discussion by leaving comments, and stay
                             updated by subscribing to the <a href="<?php bloginfo('rss2_url');?>">RSS feed</a>.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>
+                            Contact Me
+                        </h3>
+                        <p>
+                            I love hearing from my readers, if you would like to comment, ask any questions or suggest
+                            any future post material, get in touch via <a href="mailto:anna@annastravels.com">email</a>.
                         </p>
                     </div>
                 </div>
