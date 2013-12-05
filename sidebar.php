@@ -1,6 +1,8 @@
 <?php
     $about = get_post(2240);
     $moreAbout = get_post(5);
+    $book = get_post(2244);
+    $moreBook = get_post(1861);
 ?>
 <h2>
     <?php
@@ -33,6 +35,26 @@
             <i class="fa fa-twitter"></i> Anna's Travels on Twitter
         </a>
     </p>
-    <hr/>
+<hr/>
+<h2>
+    <?php
+        $title = $book->post_title;
+        $title = apply_filters('the_title', $title);
+        $title = str_replace(']]>', ']]&gt;', $title);
+        echo $title;
+    ?>
+</h2>
+<?php
+    $content = $book->post_content;
+    $content = apply_filters('the_content', $content);
+    $content = str_replace(']]>', ']]&gt;', $content);
+    echo $content;
+?>
+<p>
+    <a href="<?php echo get_permalink(1861); ?>">
+        Read more...
+    </a>
+</p>
+<hr/>
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 <?php endif; ?>
