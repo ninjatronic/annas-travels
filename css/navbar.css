@@ -1,6 +1,14 @@
+#wpadminbar {
+    position: static !important;
+}
+
+.navbar-default {
+    font-family: "estilo-pro",sans-serif;
+}
+
 .navbar-default .navbar-brand {
     color: #DFC184;
-    font-size: x-large;
+    font-size: medium;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -15,6 +23,7 @@
 .navbar-default .navbar-nav > li > a .caret:hover,
 .navbar-default .navbar-nav > li > a .caret:focus {
     color: #DFC184;
+    font-size: medium;
 }
 
 .navbar-default .navbar-nav > .active > a,
