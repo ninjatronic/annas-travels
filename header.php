@@ -68,7 +68,7 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-
+    <?php if(!is_single()) : ?>
     <div id="header-carousel" class="carousel slide carousel-height">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -114,4 +114,5 @@
         <a class="right carousel-control" href="#header-carousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-    </div>
+    </div><p>Test</p>
+    <?php endif; ?>

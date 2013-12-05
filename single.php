@@ -2,16 +2,8 @@
 
 <div class="container">
 
-    <div class="row">
+    <div class="row" style="margin-top:20px">
         <div class="col-sm-9">
-
-            <div class="row">
-                <div class="panel">
-                    <h1 class="big-light">
-                        Recent Posts
-                    </h1>
-                </div>
-            </div>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="row">
                     <div class="panel">
@@ -43,7 +35,6 @@
             <?php endif; ?>
         </div>
         <div class="col-sm-3">
-            <!-- sidebar -->
             <?php get_sidebar(); ?>
         </div>
     </div>
