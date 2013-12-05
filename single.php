@@ -33,6 +33,8 @@
                                         <i class="fa fa-twitter fa-2x"></i>
                                     </a>
                                 </p>
+                                <hr/>
+                                <?php comments_template(); ?>
                             </div>
                         </div>
                     </div>
