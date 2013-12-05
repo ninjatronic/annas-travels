@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-sm-9">
 
-            <?php if (!is_single() && is_home() ) : ?>
+            <?php if (!is_single() && is_home() && !is_paged() ) : ?>
                 <div class="row">
                     <div class="panel">
                         <?php
@@ -46,6 +46,11 @@
                     </div>
                 </div>
             <?php endif; ?>
+            <?php
+            if (is_home()) {
+                query_posts("cat=-25");
+            }
+            ?>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="row">
                     <div class="panel post-panel">
