@@ -60,5 +60,7 @@
     </a>
 </p>
 <hr/>
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
-<?php endif; ?>
+<div class="widgets">
+    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+    <?php endif; ?>
+</div>
