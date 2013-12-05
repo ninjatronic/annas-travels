@@ -37,7 +37,7 @@ a:active {
 }
 
 .btn-subscribe {
-    color: #CCCCCC;
+    color: #CCCCCC !important;
     background-color: #274257;
 }
 

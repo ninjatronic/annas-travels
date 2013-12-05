@@ -23,7 +23,6 @@
         Read more...
     </a>
 </p>
-<button type="button" class="btn btn-subscribe btn-lg btn-block">Subscribe</button>
 <hr/>
     <p class="tk-museo-sans justify">
         <a href="https://www.facebook.com/annastravels?fref=ts">
@@ -35,6 +34,8 @@
             <i class="fa fa-twitter"></i> Anna's Travels on Twitter
         </a>
     </p>
+<hr/>
+<a type="button" class="btn btn-subscribe btn-lg btn-block" href="<?php bloginfo('rss2_url');?>">Subscribe</a>
 <hr/>
 <h2>
     <?php
