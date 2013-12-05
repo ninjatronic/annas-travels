@@ -22,7 +22,7 @@
                                 <img class="img-clear img-post" src="<?php echo get_the_image() ?>"/>
                             </div>
                             <div class="col-sm-9">
-                                <h2>
+                                <h2 style="font-size:44px;">
                                     <?php the_title() ?>
                                 </h2>
                                 <p class="lead">

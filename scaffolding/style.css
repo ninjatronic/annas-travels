@@ -1,0 +1,27 @@
+body {
+    background-color: #696A6C;
+}
+
+h1, h2, h3 {
+    font-family: "estilo-pro",sans-serif;
+    text-align: center;
+    color: #DFC184;
+}
+
+p, ul, ol, li {
+    font-family: "museo-sans",sans-serif;
+    text-align: center;
+    color: #CCCCCC;
+}
+
+a,
+a:link {
+    cursor: pointer;
+    color: #DFC184;
+}
+
+a:visited,
+a:hover,
+a:active {
+    color: #DFC184;
+}

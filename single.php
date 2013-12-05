@@ -11,7 +11,7 @@
                             <div class="col-sm-3">
                                 <img class="img-clear img-post" src="<?php echo get_the_image() ?>"/>
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-sm-9" style="padding-right: 27px;">
                                 <h2>
                                     <?php the_title() ?>
                                 </h2>
