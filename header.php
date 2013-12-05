@@ -39,7 +39,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <?php
                     $args = array(
-                        'exclude' => '1,12,19'
+                        'exclude' => '1,12,19,24'
                     );
                     $categories = get_categories( $args );
                     foreach ( $categories as $category ) {

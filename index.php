@@ -5,7 +5,39 @@
     <div class="row">
         <div class="col-sm-9">
 
-            <?php if (!is_single() && !is_paged() ) : ?>
+            <?php if (!is_single() && is_home() ) : ?>
+                <div class="row">
+                    <div class="panel">
+                        <?php
+                            $feature_cat = get_category(24);
+                            $args = array( 'numberposts' => '6', 'category' => 24 );
+                            $feature_posts = wp_get_recent_posts( $args );
+                        ?>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="big-light">
+                                    <?php echo $feature_cat->name; ?>
+                                </h1>
+                                <hr/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <?php
+                                foreach( $feature_posts as $feature_post ){
+                                    echo '<div class="col-sm-4">';
+                                    echo    '<a href="' . get_permalink($feature_post['ID']) . '"/>';
+                                    echo        '<img src="' . wp_get_attachment_image_src(get_post_thumbnail_id($feature_post['ID']), 'full')[0] . '" style="width:100%;"/>';
+                                    echo    '</a>';
+                                    echo    '<br/>';
+                                    echo    '<a href="' . get_permalink($feature_post['ID']) . '"/>';
+                                    echo       '<h3>' . $feature_post['post_title'] . '</h3>';
+                                    echo    '</a>';
+                                    echo '</div>';
+                                }
+                            ?>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="panel">
                         <h1 class="big-light">
