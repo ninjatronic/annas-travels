@@ -30,3 +30,28 @@ a:hover,
 a:active {
     color:#1e537a;
 }
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-subscribe {
+    color: #CCCCCC;
+    background-color: #274257;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus,
+.btn-subscribe:active,
+.btn-subscribe.active,
+.open .dropdown-toggle.btn-subscribe {
+    color: #CCCCCC;
+    background-color: #2e4e67;
+    border-color: #2e4e67;
+}
+
+.btn-subscribe:active,
+.btn-subscribe.active,
+.open .dropdown-toggle.btn-subscribe {
+    background-image: none;
+}
