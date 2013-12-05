@@ -5,13 +5,6 @@
     <div class="row">
         <div class="col-sm-9">
 
-            <div class="row">
-                <div class="panel">
-                    <h1 class="big-light">
-                        Recent Posts
-                    </h1>
-                </div>
-            </div>
             <?php if (is_front_page() && !is_paged() ) : ?>
                 <div class="row">
                     <div class="panel">
@@ -59,13 +52,12 @@
             <?php endif; ?>
             <div class="row">
                 <ul class="pager">
-                    <li class="previous"><?php echo get_next_posts_link("<i class=\"fa fa-angle-left\"></i> Older"); ?></li>                    <li class="previous"><?php echo get_next_posts_link("<i class=\"fa fa-angle-left\"></i> Older"); ?></li>
+                    <li class="previous"><?php echo get_next_posts_link("<i class=\"fa fa-angle-left\"></i> Older"); ?></li>
                     <li class="next"><?php echo get_previous_posts_link("Newer <i class=\"fa fa-angle-right\"></i>"); ?></li>
                 </ul>
             </div>
         </div>
         <div class="col-sm-3">
-            <!-- sidebar -->
             <?php get_sidebar(); ?>
         </div>
     </div>
