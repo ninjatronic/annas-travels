@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="panel">
                         <h1 class="big-light">
-                            Recent Posts in <?php single_cat_title(); ?>
+                            Latest Posts in <?php single_cat_title(); ?>
                         </h1>
                     </div>
                 </div>
