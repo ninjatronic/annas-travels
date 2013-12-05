@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-sm-9">
 
-            <?php if (is_front_page() && !is_paged() ) : ?>
+            <?php if (!is_single() && !is_paged() ) : ?>
                 <div class="row">
                     <div class="panel">
                         <h1 class="big-light">

@@ -114,5 +114,5 @@
         <a class="right carousel-control" href="#header-carousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-    </div><p>Test</p>
+    </div>
     <?php endif; ?>
