@@ -23,5 +23,16 @@
 </p>
 <button type="button" class="btn btn-subscribe btn-lg btn-block">Subscribe</button>
 <hr/>
+    <p class="tk-museo-sans justify">
+        <a href="https://www.facebook.com/annastravels?fref=ts">
+            <i class="fa fa-facebook"></i> Anna's Travels on Facebook
+        </a>
+    </p>
+    <p class="tk-museo-sans justify">
+        <a href="https://twitter.com/annas_travels">
+            <i class="fa fa-twitter"></i> Anna's Travels on Twitter
+        </a>
+    </p>
+    <hr/>
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 <?php endif; ?>
