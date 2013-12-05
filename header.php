@@ -70,10 +70,10 @@
                 $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id($recent['ID']), 'full');
                 echo        '<img src="' . $large_image_url[0] . '">';
                 echo        '<div class="carousel-caption">';
-                echo            '<h1 class="tk-estilo-pro">';
+                echo            '<h1>';
                 echo                $recent['post_title'];
                 echo            '</h1>';
-                echo            '<p class="tk-museo-sans">';
+                echo            '<p class="text-center">';
                 echo                $recent['post_excerpt'];
                 echo            '</p>';
                 echo        '</div>';

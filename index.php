@@ -7,7 +7,7 @@
 
             <div class="row">
                 <div class="panel">
-                    <h1 class="tk-estilo-pro big-light">
+                    <h1 class="big-light">
                         Recent Posts
                     </h1>
                 </div>
@@ -20,13 +20,13 @@
                                 <img class="img-clear img-post" src="<?php echo get_the_image() ?>"/>
                             </div>
                             <div class="col-sm-9">
-                                <h2 class="tk-estilo-pro">
+                                <h2>
                                     <?php the_title() ?>
                                 </h2>
-                                <p class="tk-museo-sans justify lead">
+                                <p class="lead">
                                     <?php echo get_the_excerpt(); ?>
                                 </p>
-                                <p class="tk-museo-sans">
+                                <p>
                                     <?php
                                     if(get_comments_number() > 0) {
                                         echo get_comments_number() . ' Comments | ';
