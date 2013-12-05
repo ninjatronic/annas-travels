@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Anna's Travels</a>
+            <a class="navbar-brand" href="<?php echo get_option('home'); ?>">Anna's Travels</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

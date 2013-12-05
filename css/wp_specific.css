@@ -1,0 +1,14 @@
+.wp-caption-text {
+    border-left: 3px solid #274257;
+    padding-left: 6px;
+    margin-top: 6px;
+}
+
+.wp-caption {
+    max-width: 100% !important;
+}
+
+.wp-caption > a > img {
+    max-width: 100%;
+    height: auto;
+}

@@ -12,15 +12,6 @@
                     </h1>
                 </div>
             </div>
-            <?php if (is_front_page() && !is_paged() ) : ?>
-                <div class="row">
-                    <div class="panel">
-                        <h1 class="big-light">
-                            Recent Posts
-                        </h1>
-                    </div>
-                </div>
-            <?php endif; ?>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="row">
                     <div class="panel">
@@ -33,14 +24,7 @@
                                     <?php the_title() ?>
                                 </h2>
                                 <p class="lead">
-                                    <?php echo get_the_excerpt(); ?>
-                                </p>
-                                <p>
-                                    <?php
-                                    if(get_comments_number() > 0) {
-                                        echo get_comments_number() . ' Comments | ';
-                                    }
-                                    ?><a href="<?php the_permalink(); ?>">Read More...</a>
+                                    <?php echo apply_filters('the_content',get_the_content()); ?>
                                 </p>
                             </div>
                         </div>
@@ -57,12 +41,6 @@
                     </div>
                 </div>
             <?php endif; ?>
-            <div class="row">
-                <ul class="pager">
-                    <li class="previous"><?php echo get_next_posts_link("<i class=\"fa fa-angle-left\"></i> Older"); ?></li>                    <li class="previous"><?php echo get_next_posts_link("<i class=\"fa fa-angle-left\"></i> Older"); ?></li>
-                    <li class="next"><?php echo get_previous_posts_link("Newer <i class=\"fa fa-angle-right\"></i>"); ?></li>
-                </ul>
-            </div>
         </div>
         <div class="col-sm-3">
             <!-- sidebar -->
