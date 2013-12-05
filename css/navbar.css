@@ -59,6 +59,9 @@
     color: #DFC184;
 }
 
+.navbar-nav > li {
+    display: block !important;
+}
 
 .navbar-nav > li > .dropdown-menu {
     background-color: #2A75A9;

@@ -37,9 +37,33 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Van Conversion</a></li>
-                <li><a href="#">Lifestyle</a></li>
-                <li><a href="#">Travel</a></li>
+                <?php
+                    $args = array(
+                        'exclude' => '1,12,19'
+                    );
+                    $categories = get_categories( $args );
+                    foreach ( $categories as $category ) {
+                        if($category->parent == 0) {
+                            $subcats = array();
+                            foreach($categories as $subcat) {
+                                if($subcat->parent == $category->term_id) {
+                                    array_push($subcats, $subcat);
+                                }
+                            }
+                            if(sizeof($subcats) > 0) {
+                                echo '<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">' . $category->name . ' <i class="fa fa-caret-down"></i></a>';
+                                echo '<ul class="dropdown-menu">';
+                                foreach($subcats as $subcat) {
+                                    echo '<li><a href="' . get_category_link( $subcat->term_id ) . '">' . $subcat->name . '</a></li>';
+                                }
+                                echo '</ul>';
+                                echo '</li>';
+                            } else {
+                                echo '<li><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a></li>';
+                            }
+                        }
+                    }
+                ?>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
