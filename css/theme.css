@@ -97,8 +97,3 @@ a:active {
 .post-panel > .row > div > p {
 
 }
-
-.widgets > ul > li > a,
-.widgets > ul > li > ul > li > a{
-    text-decoration: none;
-}

@@ -1,3 +1,14 @@
 .archive-node {
     margin: 12px;
 }
+
+.widgets > ul > li > a,
+.widgets > ul > li > ul > li > a{
+    text-decoration: none;
+}
+
+.widgets > ul > li,
+.widgets > ul > li > ul > li,
+.widgets > ul > li > ul > li > ul > li {
+    text-align: left;
+}

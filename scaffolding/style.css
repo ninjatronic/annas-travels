@@ -9,9 +9,7 @@ h1, h2, h3 {
 }
 
 p, ul, ol, li {
-    font-family: "museo-sans",sans-serif;
-    text-align: center;
-    color: #CCCCCC;
+    font-family: "museo-sans",sans-serif;text-align: center;color: #CCCCCC;
 }
 
 a,
