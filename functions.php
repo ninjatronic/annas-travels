@@ -25,6 +25,11 @@ function wp_new_excerpt($text)
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'wp_new_excerpt');
 
+function custom_excerpt_length( $length ) {
+    return 28;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 function get_the_image() {
     global $post, $posts;
     $first_img = '';
