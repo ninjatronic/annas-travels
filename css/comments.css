@@ -1,0 +1,16 @@
+textarea {
+    width: 100%
+}
+
+#submit {
+    background-color: #274257;
+    color: #CCCCCC;
+    font-size: 18px;
+    border-width: 0;
+    margin-bottom: 12px;
+    padding: 10px 16px;
+}
+
+.subscribe-label {
+    font-weight: normal !important;
+}

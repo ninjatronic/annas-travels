@@ -23,6 +23,7 @@ License URI: http://opensource.org/licenses/MIT
 @import url('css/wp_specific.css');
 @import url('css/search.css');
 @import url('css/shop-hack.css');
+@import url('css/comments.css');
 
 .big-light {
     font-size: 72px;
