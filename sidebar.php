@@ -61,9 +61,13 @@
     </a>
 </p>
 <hr/>
-<img src="http://annastravels.com/fisch.png"/>
+<a href="http://www.gofisch.org/">
+    <img src="http://annastravels.com/fisch.png"/>
+</a>
 <hr/>
-<img src="http://annastravels.com/tranquilify.png"/>
+<a href="https://itunes.apple.com/us/app/tranquilify/id767698450?mt=8">
+    <img src="http://annastravels.com/tranquilify.png"/>
+</a>
 <hr/>
 <div class="widgets">
     <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
