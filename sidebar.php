@@ -61,6 +61,10 @@
     </a>
 </p>
 <hr/>
+<img src="http://annastravels.com/fisch.png"/>
+<hr/>
+<img src="http://annastravels.com/tranquilify.png"/>
+<hr/>
 <div class="widgets">
     <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
     <?php endif; ?>
