@@ -57,7 +57,7 @@
                         <div class="row">
                             <div class="col-sm-3">
                                 <a href="<?php the_permalink(); ?>">
-                                    <img class="img-clear img-post" src="<?php echo get_the_image() ?>"/>
+                                    <?php echo get_the_post_thumbnail($page->ID, 'thumbnail'); ?>
                                 </a>
                             </div>
                             <div class="col-sm-9">
