@@ -8,8 +8,7 @@
                 <div class="row">
                     <div class="panel">
                         <div class="row">
-                            <div class="col-sm-3">
-<!--                                <img class="img-clear img-post hidden-sm hidden-xs" src="--><?php //echo get_the_image() ?><!--"/>-->
+                            <div class="col-sm-3 hidden-sm hidden-xs">
                                 <?php echo get_the_post_thumbnail($page->ID, 'thumbnail'); ?>
                             </div>
                             <div class="col-sm-9" style="padding-right: 27px;">
