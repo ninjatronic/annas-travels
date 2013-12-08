@@ -5,9 +5,9 @@
 
     <title><?php wp_title(); ?></title>
 
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <script type="text/javascript" src="//use.typekit.net/cpv8jke.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
