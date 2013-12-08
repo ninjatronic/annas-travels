@@ -20,7 +20,7 @@
                         <div class="row">
                             <div class="col-sm-3">
                                 <a href="<?php the_permalink(); ?>">
-                                    <?php echo get_the_post_thumbnail($page->ID, 'thumbnail'); ?>
+                                    <img class="img-clear img-post" src="<?php echo get_the_image() ?>"/>
                                 </a>
                             </div>
                             <div class="col-sm-9">

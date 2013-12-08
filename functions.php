@@ -44,6 +44,19 @@ function get_the_image() {
     return $first_img;
 }
 
+function get_the_post_image($post) {
+    $first_img = '';
+    ob_start();
+    ob_end_clean();
+    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+    $first_img = $matches[1][0];
+
+    if(empty($first_img)) {
+        $first_img = "";
+    }
+    return $first_img;
+}
+
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'before_widget' => '',
