@@ -19,7 +19,7 @@
                                     <?php echo apply_filters('the_content',get_the_content()); ?>
                                 </p>
                                 <h3>
-                                    By <?php the_author_link(); ?>
+                                    By <?php the_author(); ?>
                                     <br/>
                                     <small>
                                         <?php the_date(); ?>
