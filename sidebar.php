@@ -1,7 +1,7 @@
 <?php
-    $about = get_post(2240);
-    $moreAbout = get_post(5);
-    $book = get_post(2244);
+    $about = get_post(2289);
+    $moreAbout = get_post(2);
+    $book = get_post(2291);
     $moreBook = get_post(1861);
 ?>
 <h2>
@@ -19,7 +19,7 @@
     echo $content;
 ?>
 <p>
-    <a href="<?php echo get_permalink(5); ?>">
+    <a href="<?php echo get_permalink(2); ?>">
         Read more...
     </a>
 </p>

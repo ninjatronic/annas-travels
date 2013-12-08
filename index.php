@@ -26,7 +26,6 @@
                                 foreach( $feature_posts as $feature_post ){
                                     echo '<div class="col-sm-4">';
                                     echo    '<a href="' . get_permalink($feature_post['ID']) . '"/>';
-//                                    echo        '<img src="' . wp_get_attachment_image_src(get_post_thumbnail_id($feature_post['ID']), 'full')[0] . '" style="width:100%;"/>';
                                     echo get_the_post_thumbnail($feature_post['ID'], 'medium');
                                     echo    '</a>';
                                     echo    '<br/>';
