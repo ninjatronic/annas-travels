@@ -17,7 +17,7 @@
                             The Latest
                         </h3>
                         <?php
-                            $args = array( 'numberposts' => '1' );
+                            $args = array( 'numberposts' => '1', 'post_status' => 'publish' );
                             $recent_posts = wp_get_recent_posts( $args );
                             foreach( $recent_posts as $recent ){
                                 echo '<p>' . $recent['post_excerpt'] . ' <a href="' . get_permalink($recent['ID']) . '">More...</a></p>';
