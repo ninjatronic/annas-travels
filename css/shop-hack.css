@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .default_product_display .imagecol {
+        display:none !important;
+    }
+
+    .default_product_display .productcol {
+        margin-left: 0 !important;
+    }
+}
