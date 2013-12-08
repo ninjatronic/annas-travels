@@ -39,7 +39,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <?php
                     $args = array(
-                        'exclude' => '1,12,19,24'
+                        'exclude' => '40,45,1'
                     );
                     $categories = get_categories( $args );
                     foreach ( $categories as $category ) {
@@ -79,9 +79,10 @@
             <li data-target="#header-carousel" data-slide-to="4"></li>
         </ol>
 
-        <div class="carousel-inner carousel-height">
+        <div class="carousel-opaque"></div>
+        <div class="carousel-inner carousel-height" style="background-image:url(<?php bloginfo('stylesheet_directory'); ?>/img/black50.png)">
         <?php
-            $args = array( 'numberposts' => '5', 'category' => 19 );
+            $args = array( 'numberposts' => '5', 'category' => 40 );
             $recent_posts = wp_get_recent_posts( $args );
             $index = 0;
             foreach( $recent_posts as $recent ){
