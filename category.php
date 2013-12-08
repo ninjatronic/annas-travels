@@ -19,12 +19,16 @@
                     <div class="panel">
                         <div class="row">
                             <div class="col-sm-3">
-                                <img class="img-clear img-post" src="<?php echo get_the_image() ?>"/>
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php echo get_the_post_thumbnail($page->ID, 'thumbnail'); ?>
+                                </a>
                             </div>
                             <div class="col-sm-9">
-                                <h2>
-                                    <?php the_title() ?>
-                                </h2>
+                                <a href="<?php the_permalink(); ?>">
+                                    <h2>
+                                        <?php the_title() ?>
+                                    </h2>
+                                </a>
                                 <p class="lead">
                                     <?php echo get_the_excerpt(); ?>
                                 </p>
