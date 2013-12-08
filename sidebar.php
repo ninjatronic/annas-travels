@@ -1,3 +1,4 @@
+<hr class="visible-xs visible-sm"/>
 <?php
     $about = get_post(2289);
     $moreAbout = get_post(2);
