@@ -6,12 +6,22 @@
 
 .wp-caption {
     max-width: 100% !important;
+    padding: 12px;
+    margin: 6px;
+    box-shadow: 3px 3px 5px #999999;
 }
 
 .wp-caption > a > img,
-.wp-caption > img{
+.wp-caption > img {
     max-width: 100%;
     height: auto;
+}
+
+.wp-caption-text {
+    padding-left: 6px;
+    margin-top: 6px;
+    text-align: center;
+    font-style: italic;
 }
 
 .aligncenter {
