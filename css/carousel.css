@@ -18,11 +18,6 @@
     margin-left: -800px;
 }
 
-.carousel-caption > a {
-    color: #ffffff;
-    background-image: url(../img/black50.png);
-}
-
 .carousel-opaque {
     width: 100%;
     height: 50%;

@@ -99,7 +99,7 @@
                 echo                    $recent['post_title'];
                 echo                '</h1>';
                 echo            '</a>';
-                echo            '<a href="' . get_permalink($recent['ID']) . '">';
+                echo            '<a href="' . get_permalink($recent['ID']) . '" class="hidden-sm hidden-xs">';
                 echo                '<p class="text-center">';
                 echo                    $recent['post_excerpt'];
                 echo                '</p>';
