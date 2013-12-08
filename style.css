@@ -27,7 +27,7 @@ License URI: http://opensource.org/licenses/MIT
 
 .big-light {
     font-size: 72px;
-    font-weight: lighter;
+    font-weight: 300;
 }
 
 .big-light small {
