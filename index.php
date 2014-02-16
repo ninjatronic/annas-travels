@@ -10,7 +10,7 @@
                     <div class="panel">
                         <?php
                             $feature_cat = get_category(45);
-                            $args = array( 'numberposts' => '6', 'category' => 45 );
+                            $args = array( 'numberposts' => '6', 'category' => 45, 'post_status' => 'publish' );
                             $feature_posts = wp_get_recent_posts( $args );
                         ?>
                         <div class="row">

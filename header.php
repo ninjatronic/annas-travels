@@ -82,7 +82,7 @@
         <div class="carousel-opaque"></div>
         <div class="carousel-inner carousel-height" style="background-image:url(<?php bloginfo('stylesheet_directory'); ?>/img/black50.png)">
         <?php
-            $args = array( 'numberposts' => '5', 'category' => 40 );
+            $args = array( 'numberposts' => '5', 'category' => 40, 'post_status' => 'publish' );
             $recent_posts = wp_get_recent_posts( $args );
             $index = 0;
             foreach( $recent_posts as $recent ){
