@@ -25,10 +25,6 @@ License URI: http://opensource.org/licenses/MIT
 @import url('css/shop-hack.css');
 @import url('css/comments.css');
 
-body {
-    padding-top: 50px;
-}
-
 .big-light {
     font-size: 72px;
     font-weight: 300;
